@@ -1,0 +1,21 @@
+config.tx_extbase {
+	objects {
+		Webfox\T3events\Domain\Model\Event {
+			className = Wenzel\T3eventsRest\Domain\Model\Event
+		}
+	}
+	persistence {
+		classes {
+			Wenzel\T3eventsRest\Domain\Model\Event {
+				mapping {
+					tableName = tx_t3events_domain_model_event
+						columns {
+							headline.mapOnProperty = headline
+							performances.mapOnProperty = performances
+						}
+				}
+			}
+		}
+	}
+}
+
