@@ -15,10 +15,15 @@
       "email": "der-wenzel@gmx.de"
     }
   ],
+  "repositories": [
+    {
+      "type": "vcs", "url": "https://github.com/AOEpeople/Restler.git"
+
+    }
+  ],
   "require": {
     "typo3/cms": ">=7.6.0,<=8.99.99",
     "dwenzel/t3events": "^0.32",
-    "luracast/restler": "3.0.0 as 3.0.0.20170425",
     "aoe/restler": "^1.6"
   },
   "require-dev": {
