@@ -1,5 +1,5 @@
 <?php
-namespace Wenzel\T3eventsRest\System\Restler;
+namespace DWenzel\T3eventsRest\System\Restler;
 
 use Aoe\Restler\System\Restler\ConfigurationInterface;
 use Luracast\Restler\Defaults;
@@ -41,7 +41,7 @@ class Configuration implements ConfigurationInterface
 				JsonFormat::$prettyPrint = true;
 
         $restler->setSupportedFormats('JsonFormat');
-        $restler->addAPIClass('Wenzel\\T3eventsRest\\Controller\\EventController', 'api/events');
+        $restler->addAPIClass('DWenzel\\T3eventsRest\\Controller\\EventController', 'api/events');
 
         // add exception-handler (which logs exceptions)
         //$restler->addErrorClass('Wenzel\\T3eventsRests\\System\\Restler\\ExceptionHandler');
